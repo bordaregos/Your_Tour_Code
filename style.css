@@ -1,0 +1,226 @@
+/* Задаём параметры всего документа. */
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1920px;
+}
+/* СДЕЛАТЬ АДАПТИВ ПОД 1366Х768 И МОБИЛКИ!!! */
+/* Прописываем цвета шрифтов для всего сайта. */
+:root {
+    --font-family: "Roboto", sans-serif;
+    --black: #1b1f2b;
+	--white: #fff;
+	--green-100: #e0f0e5;
+	--green-200: #627f7e;
+	--green-300: #3b7e7b;
+	--green-400: #286562;
+	--beige-100: #f9f7f4;
+	--beige-200: #f4f0e9;
+	--orange-100: #f8e6be;
+	--orange-200: #efa501;
+	--gray-300: #a6a6a6;
+	--gray-200: #d9dfdb;
+	--gray-100: #f1f3f2;
+  }
+/* Редактор фона шапки. */
+.header-background {
+    max-height: 831px;
+    position: absolute;
+    z-index: -1;
+}
+/* Редактор шапки. */
+.head1 {
+    position: relative;
+    padding: 30px 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 214px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: var(--white);
+}
+/* Редактор лого. */
+.logo {
+    max-width: 182px;
+}
+/* Редактор навигации. */
+.nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    list-style-type: none;
+}
+/* РЕШИТЬ ПРОБЛЕМУ С ПРЫГАЮЩИМИ ЭЛЕМЕНТАМИ!!! */
+.nav :hover {
+    /* font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: var(--black); */
+    border-bottom: 3px solid var(--black);
+    width: auto;
+    transition: border-bottom 1s;
+}
+/* Редактор флекс-заголовка сайта. */
+.head2 {
+    max-height: 743px;
+    padding-bottom: 115px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+/* Редактор основного заголовка сайта. */
+.head-main {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 109%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+    max-width: 768px;
+    padding: 119px 576px 0 576px;
+}
+/* Подзаголовок. */
+.paragraph {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    text-align: center;
+    color: var(--white);
+    max-width: 562px;
+}
+/* Редактор кнопки поиска. */
+.button-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width: 118px;
+    height: 34px;
+    background: var(--white);
+    /* Обязательно прописать логику работы кнопки!!! */
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Редактор флекса (грида) выбора тура. */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 100px;
+}
+/* Заголовок флекса и навигация. */
+.main-head1-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 35px;
+}
+/* Редактор второстепенных заголовков по сайту. */
+.head {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 59px;
+    line-height: 124%;
+    text-align: center;
+    color: var(--black);
+}
+/* Навигация по турам. */
+.head1-nav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+    max-width: 700px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: var(--black);
+}
+/* Грид туров. */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+/* Флекс контейнер в гриде. */
+.flex-content {
+    display: flex;
+}
+/* Редактор фона грида. */
+.grid-img {
+    position: relative;
+    /* z-index: -1; */
+    border-radius: 50px;
+    width: 370px;
+    /* background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%); */
+}
+/* Флекс карточки тура. */
+.flex-test {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 50px 0 50px;
+    flex-wrap: wrap;
+    height: 431px;
+    width: 270px;
+}
+/* Флекс контейнер описания тура. */
+.flex-description {
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+}
+/* Редактор заголовок тура. */
+.flex-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 122%;
+    color: var(--white);
+    padding-bottom: 40px;
+}
+/* Редактор цены тура. */
+.flex-price {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 142%;
+    letter-spacing: -0.01em;
+    color: var(--white);
+}
+/* Кнопка. */
+/* Сделать кнопку кликабельной!!! */
+.button-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 122%;
+    color: var(--white);
+}
+/* Сделать нормальные цвета гридов!!!. */
