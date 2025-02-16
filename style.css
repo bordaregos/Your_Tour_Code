@@ -224,3 +224,51 @@
     color: var(--white);
 }
 /* Сделать нормальные цвета гридов!!!. */
+
+/* ---------------------------------------------------------------- */
+
+.block-grid-container {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 20px;
+}
+
+.grid-header {
+    grid-area: 1 / 1 / 2 / 3;
+    /* background-color: #3b7e7b; */
+}
+
+/* .grid-header-paragraph {
+
+} */
+
+.grid-form {
+    grid-area: 2/ 1 / 3 / 2;
+    /* background-color:#efa501; */
+    display: flex;
+}
+
+.flex-form {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+.form-desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 142%;
+    color: var(--black);
+}
+
+.input-form {
+    border: 1px solid var(--beige-200);
+    border-radius: 10px;
+    padding: 20px;
+    width: 500px;
+}
